@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-panel {
+    width: 25%;
+    box-sizing: border-box;
+    display: flex; /* Utilizar flexbox para posicionar las dos columnas principales: la de contactos y la de sección principal.*/
+    flex-direction: column; /* Utilizar flexbox para posicionar las dos columnas principales: la de contactos y la de sección principal.*/
+}
+
+.right-panel {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Utilizar flexbox para posicionar las dos columnas principales: la de contactos y la de sección principal.*/
+    justify-content: center; /* Utilizar flexbox para posicionar las dos columnas principales: la de contactos y la de sección principal.*/
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center; /*Utilizar Flex para enlistar los contactos de forma vertical mostrando al menos el nombre de cada uno. */
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/*Al principio de la sección de contactos, agregar el estatus del usuario con la imagen e íconos como muestra la imagen 1.*/
+.profile-info {
+    width: 100%; 
+    padding-bottom: 10px; 
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile-info h2, .profile-info p {
+    margin: 0;
+    padding: 0;
+    align-items: start;
+}
+
+.profile-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.message-icon, .menu-icon {
+    margin-left: 10px;
+    font-size: 24px; 
+}
+
+.text-content {
+    text-align: center; /*  Posicionar con flex en el centro de la sección principal el logo y textos.*/
+    max-width: fit-content; 
+    margin: auto; 
+}
+
+h1 {
+    margin-top: 5px; 
+    font-size: 24px; 
+    text-align: center; /*  Posicionar con flex en el centro de la sección principal el logo y textos.*/
+}
+
+.text-container p {
+    margin: 0; 
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #828485; 
+    margin-inline: 20%;
+    text-align: center; /*  Posicionar con flex en el centro de la sección principal el logo y textos.*/
+}
+
+.right-panel img {
+    max-width: 20%;
+    height: auto; 
+    justify-content: center;
+}
+
+.contacts li {
+    list-style: none;
+    margin: 10px 0;
+    color: #444749;
+}
+
+.new-chat {
+    background-color: #A491D2;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    justify-content: center; /*Dentro de la sección de contactos, agregar el botón nuevo chat. El botón debe estar centrado y posicionado con Flex.*/
+    align-items: center;
+}
+
+.btn-chat {
+    display: flex; /*Dentro de la sección de contactos, agregar el botón nuevo chat. El botón debe estar centrado y posicionado con Flex.*/
+    justify-content: center; /*Dentro de la sección de contactos, agregar el botón nuevo chat. El botón debe estar centrado y posicionado con Flex.*/
+    padding: 20px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.contacts-container {
+    display: flex; /*Utilizar Flex para enlistar los contactos de forma vertical mostrando al menos el nombre de cada uno. */
+    flex-direction: column; /*Utilizar Flex para enlistar los contactos de forma vertical mostrando al menos el nombre de cada uno. */
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
+.contact-item {
+    display: flex; /*Dentro de cada contacto, mostrar la imagen y un texto con el último mensaje enviado, posicionando estos elementos con Flex.*/
+    align-items: center; /*Dentro de cada contacto, mostrar la imagen y un texto con el último mensaje enviado, posicionando estos elementos con Flex.*/
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.contact-item img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover; 
+}
+
+.contact-info h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+
+}
+
